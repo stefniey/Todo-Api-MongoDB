@@ -28,14 +28,15 @@ Here's an overview of the project's folder structure:
 Mongo-CRUD-Todo-App/
 ├── src/
 │   ├── controllers/
-│   │   └── todoController.js
+│   │   └── todo.js
+│   ├── database/
+│   │   └── db.js
 │   ├── models/
-│   │   └── todoModel.js
+│   │   └── todo.js
 │   ├── routes/
-│   │   └── todoRoutes.js
+│   │   └── todo.js
 │   ├── app.js
 │   └── server.js
-└── .env
 ```
 
 ## Getting Started
@@ -61,22 +62,15 @@ Ensure you have the following installed on your system:
    yarn install
    ```
 
-3. **Set up environment variables**:
-   Create a `.env` file in the root directory and add the following:
-   ```env
-   MONGO_URI=your_mongodb_connection_string
-   PORT=5000
-   ```
-
-4. **Start the server**:
+3. **Start the server**:
    ```bash
    npm start
    # or
    yarn start
    ```
 
-5. **Access the API**:
-   The API will be running at [http://localhost:5000](http://localhost:5000).
+4. **Access the API**:
+   The API will be running at [http://localhost:3000](http://localhost:3000).
 
 ## API Endpoints
 
